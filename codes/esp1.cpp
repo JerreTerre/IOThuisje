@@ -10,7 +10,7 @@
 // --- Instellingen ---
 #define LED_PIN_CLK 18
 #define LED_PIN_DATA 23
-#define NUM_LEDS 5 
+#define NUM_LEDS 7 
 CRGB leds[NUM_LEDS];
 
 BH1750 lightMeter;
@@ -21,14 +21,14 @@ const char *password = "bruudruuster";
 const char *mqtt_broker = "10.212.51.132";
 
 // Topics voor publiceren (ESP naar Pi)
-const char *topic_temp = "esp/temp3";
-const char *topic_light = "esp/licht3";
+const char *topic_temp = "esp/temp1";
+const char *topic_light = "esp/licht1";
 
 // Topics voor abonneren (Pi naar ESP)
-const char *topic_gewenst = "esp/gewenst3";
-const char *topic_r = "esp3/kleur1";
-const char *topic_g = "esp3/kleur2";
-const char *topic_b = "esp3/kleur3";
+const char *topic_gewenst = "esp/gewenst1";
+const char *topic_r = "esp1/kleur1";
+const char *topic_g = "esp1/kleur2";
+const char *topic_b = "esp1/kleur3";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
